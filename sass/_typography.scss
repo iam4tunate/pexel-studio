@@ -1,0 +1,17 @@
+h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    color: #851e3e;
+
+    @media (max-width: 575px) {
+        font-size: 3rem;
+    }
+}
+
+h2 {
+    color: #051e3e;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: .7px;
+}

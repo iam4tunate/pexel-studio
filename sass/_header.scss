@@ -1,0 +1,35 @@
+.header {
+    background-color: #051e3e;
+    grid-column: full-start / full-end;
+    padding: 0 6rem;
+
+    &__nav {
+        height: 6rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    &__logo {
+        color: #fff;
+        grid-column-gap: 1 / 2;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    &__icon {
+        grid-column: 2 / 3;
+        justify-self: end;
+
+        & span {
+            display: block;
+            height: 2px;
+            width: 2rem;
+            background-color: #fff;
+
+            &:not(:first-child) {
+                margin-top: .5rem;
+            }
+        }
+    }
+}

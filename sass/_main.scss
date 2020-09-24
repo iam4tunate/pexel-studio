@@ -1,0 +1,26 @@
+.main {
+    grid-column: full-start / full-end;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    min-height: 80vh;
+
+    &__text {
+        text-align: center;
+        width: 60%;
+        margin: 0 auto;
+        padding-bottom: 4rem;
+
+        @media (max-width: 767px) {
+            width: 80%;
+        }
+
+        @media (max-width: 575px) {
+            width: 90%;
+        }
+    }
+
+    &__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    }
+}
